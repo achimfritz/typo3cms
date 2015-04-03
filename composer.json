@@ -1,0 +1,15 @@
+{
+    "name": "achimfritz/typo3-cms-deployable",
+    "description": "a by lightwerk.surfcaptain deployable typo3 cms",
+    "homepage": "https://github.com/achimfritz/typo3-cms-deployable",
+    "support": {
+        "email": "af@achimfritz.de"
+    },
+    "repositories": [
+        {"type": "composer", "url": "http://composer.typo3.org"}
+    ],
+    "require": {
+        "typo3/cms": "6.2.*",
+        "typo3-ter/coreapi": "*"
+    }
+}
