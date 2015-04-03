@@ -3,11 +3,6 @@
 /typo3_src
 /typo3conf/ENABLE_INSTALL_TOOL
 /typo3conf/ext/*
-!/typo3conf/ext/lw_suzuki_*
-!/typo3conf/ext/lit_eidajax
-/typo3conf/ext/lw_suzuki_media_statistic/Resources/Private/Templates_c/*
 /vendor/
-/components/
-/logs/
 /typo3temp/*
 !/typo3temp/.gitdummy
