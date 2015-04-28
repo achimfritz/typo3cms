@@ -6,10 +6,12 @@
         "email": "af@achimfritz.de"
     },
     "repositories": [
-        {"type": "composer", "url": "http://composer.typo3.org"}
+        {"type": "composer", "url": "http://composer.typo3.org"},
+        {"type": "vcs", "url": "git@github.com:TYPO3-coreapi/ext-coreapi.git"}
     ],
     "require": {
         "typo3/cms": "6.2.*",
-        "typo3-ter/coreapi": "*"
-    }
+        "typo3-ter/coreapi": "dev-master"
+    },
+    "minimum-stability": "dev"
 }
