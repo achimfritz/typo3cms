@@ -4,24 +4,28 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d5460547bbb911cdb8a50a15ce821c6a",
+    "hash": "d67d3de594d5898c8b5e94186bb5b776",
     "packages": [
         {
             "name": "helhum/class-alias-loader",
-            "version": "1.0.99",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/class-alias-loader.git",
-                "reference": "486fea8c1fb7cd568c73a62a4add3a0a353827ca"
+                "reference": "99c59fffbae4260685bf72a5b34f2d79304903c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/class-alias-loader/zipball/486fea8c1fb7cd568c73a62a4add3a0a353827ca",
-                "reference": "486fea8c1fb7cd568c73a62a4add3a0a353827ca",
+                "url": "https://api.github.com/repos/helhum/class-alias-loader/zipball/99c59fffbae4260685bf72a5b34f2d79304903c8",
+                "reference": "99c59fffbae4260685bf72a5b34f2d79304903c8",
                 "shasum": ""
             },
-            "type": "library",
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
+            "type": "composer-plugin",
             "extra": {
+                "class": "Helhum\\ClassAliasLoader\\Composer\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.1.x-dev"
                 }
@@ -49,52 +53,65 @@
                 "classloader",
                 "composer"
             ],
-            "time": "2015-03-22 20:28:13"
+            "time": "2015-04-27 12:45:04"
         },
         {
-            "name": "typo3-ter/coreapi",
-            "version": "1.1.1",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/coreapi/1.1.1/t3x/",
-                "reference": null,
-                "shasum": null
+            "name": "lightwerk/coreapi",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lightwerk/ext-coreapi.git",
+                "reference": "24b4ef89d44089047b5c3679f3fac44fbecb7d50"
             },
-            "require": {
-                "typo3/cms": ">= 6.2.0, <= 6.2.99"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lightwerk/ext-coreapi/zipball/24b4ef89d44089047b5c3679f3fac44fbecb7d50",
+                "reference": "24b4ef89d44089047b5c3679f3fac44fbecb7d50",
+                "shasum": ""
             },
             "type": "typo3-cms-extension",
             "authors": [
                 {
-                    "name": "Tobias Liebig,Georg Ringer,Stefano Kowalke",
-                    "email": "tobias.liebig@typo3.org,georg.ringer@cyberhouse.at,blueduck@gmx.net",
-                    "company": "",
-                    "username": "etobi.de"
+                    "name": "Tobias Liebig",
+                    "homepage": "http://etobi.de"
+                },
+                {
+                    "name": "Stefano Kowalke"
                 }
             ],
-            "description": "coreapi",
-            "time": "2014-11-18 09:43:06"
+            "description": "Provides a simple to use API for common core features. Goal is to be able to do the most common tasks by CLI instead of doing it in the backend/browser.",
+            "keywords": [
+                "cli",
+                "commandline",
+                "deployment",
+                "extension",
+                "typo3"
+            ],
+            "support": {
+                "source": "https://github.com/lightwerk/ext-coreapi/tree/master"
+            },
+            "time": "2015-05-08 14:40:39"
         },
         {
             "name": "typo3/cms",
-            "version": "6.2.11",
+            "version": "6.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "1e44a4d1533aa4d70e6fa90ec96ef3f098844d59"
+                "reference": "1fece4341b5bb18137f2fd60c34e30638b8eeef3"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://get.typo3.org/6.2.11",
-                "reference": "6.2.11",
-                "shasum": "935aa012e2904742ddf1fd9bb2118865edf4097b"
+                "url": "http://get.typo3.org/6.2.12",
+                "reference": "6.2.12",
+                "shasum": "41775b361eb89c45195820cba8c8e3085dfa9f5d"
             },
             "require": {
                 "ext-fileinfo": "*",
                 "ext-pcre": "*",
                 "ext-session": "*",
                 "ext-xml": "*",
-                "helhum/class-alias-loader": "1.0.*@dev",
+                "helhum/class-alias-loader": "1.1.*@dev",
                 "php": ">=5.3.7",
                 "typo3/cms-composer-installers": "1.1.*@dev"
             },
@@ -233,7 +250,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-03-17 14:06:19"
+            "time": "2015-04-16 07:29:48"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -300,9 +317,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "lightwerk/coreapi": 20
+    },
     "prefer-stable": false,
-    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
