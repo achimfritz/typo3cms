@@ -475,10 +475,19 @@ return array (
       array (
       ),
     ),
+    'realurl' => 
+    array (
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/realurl/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'coreapi' => 
     array (
       'manifestPath' => '',
-      'composerName' => 'etobi/coreapi',
+      'composerName' => 'lightwerk/coreapi',
       'state' => 'active',
       'packagePath' => 'typo3conf/ext/coreapi/',
       'classesPath' => 'Classes/',

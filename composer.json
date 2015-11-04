@@ -11,6 +11,7 @@
     ],
     "require": {
         "typo3/cms": "6.2.*",
-        "lightwerk/coreapi": "dev-master"
+        "lightwerk/coreapi": "dev-master",
+	"typo3-ter/realurl": "1.13.*"
     }
 }
