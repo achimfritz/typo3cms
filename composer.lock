@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d3381e699e9381a4bab5bd1a9ec33435",
-    "content-hash": "1fbc23492c9634b9c0229cc398a8af7b",
+    "hash": "d67d3de594d5898c8b5e94186bb5b776",
+    "content-hash": "74730805dc7bf07d1926d6987298900e",
     "packages": [
         {
             "name": "helhum/class-alias-loader",
@@ -92,40 +92,6 @@
                 "source": "https://github.com/lightwerk/ext-coreapi/tree/master"
             },
             "time": "2015-05-08 14:40:39"
-        },
-        {
-            "name": "typo3-ter/realurl",
-            "version": "1.13.4",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/realurl/1.13.4/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">= 5.3.2, <= 5.999.999",
-                "typo3/cms": ">= 4.5.40, <= 7.9.999"
-            },
-            "conflict": {
-                "typo3-ter/cooluri": "*",
-                "typo3-ter/simulatestatic": "*"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "Dmitry Dulepov",
-                    "email": "dmitry.dulepov@gmail.com",
-                    "company": "",
-                    "username": "dmitry"
-                }
-            ],
-            "description": "Creates nice looking URLs for TYPO3 pages: converts http://example.com/index.phpid12345&L2 to http://example.com/path/to/your/page/. Please, ask for free support in TYPO3 mailing lists or contact the maintainer for paid support.",
-            "time": "2015-08-28 13:59:43"
         },
         {
             "name": "typo3/cms",
